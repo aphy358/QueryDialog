@@ -55,4 +55,10 @@ function test() {
 
 ```javascript
 var arrStr = '[{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"年龄"},{"queryfieldtype":"6","queryfieldname":"name","queryfieldrmk":"姓名"},{"queryfieldtype":"5","queryfieldname":"ismarried","queryfieldrmk":"是否已婚"},{"queryfieldtype":"4","queryfieldname":"birthday","queryfieldrmk":"出生日期"}]';
+
+//参数arrStr是一个数组的字符串，插件会将它转成json格式，并进一步处理；
+//每一个参数单体结构：{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"年龄"}；
+//1、queryfieldtype表示查询条件的参数类型，如“整数”、“字符型”、“日期型”等，这里“1”代表的是“浮点型数字”，当然也可以根据实际情况另外约定；
+//2、queryfieldname表示查询条件的字段名称，是要对哪个字段进行过滤；
+//3、queryfieldrmk表示查询条件字段的显示名称；
 ```
