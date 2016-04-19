@@ -4,6 +4,8 @@
 
 这是一个简易插件，根据传入的参数，动态生成一个查询条件编辑框，用户编辑完查询条件之后再传到后台，对数据进行过滤。
 
+![QueryDialog Default View](https://github.com/aphy358/QueryDialog/blob/master/ScreenShot.jpg)
+
 ## Dependencies
 
 普通的JQuery包即可.  
