@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+
+    <title>QueryDialog Tests</title>
+    <link rel='stylesheet' href='./lib/QueryDialog.css'>
+
+</head>
+<body>
+    <button onclick="test()">查询</button>
+
+    <script src='./lib/jquery.js'></script>
+    <script src='./lib/QueryDialog.js'></script>
+    <script>
+        $(document).ready(function () {
+            var arrStr = '[{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"年龄"},{"queryfieldtype":"6","queryfieldname":"name","queryfieldrmk":"姓名"},{"queryfieldtype":"5","queryfieldname":"ismarried","queryfieldrmk":"是否已婚"},{"queryfieldtype":"4","queryfieldname":"birthday","queryfieldrmk":"出生日期"}]';
+            $("#QueryDialog").QueryDialog({ data: arrStr });
+        });
+
+        function test() {
+            $("#QueryDialog").show();
+            $(".qdialog-mask").show();
+        }
+    </script>
+</body>
+</html>
