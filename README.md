@@ -1,24 +1,23 @@
-# QueryDialog¼ò½é
+# QueryDialogç®€ä»‹
 
 ---
 
-ÕâÊÇÒ»¸ö¼òÒ×²å¼ş£¬¸ù¾İ´«ÈëµÄ²ÎÊı£¬¶¯Ì¬Éú³ÉÒ»¸ö²éÑ¯Ìõ¼ş±à¼­¿ò£¬ÓÃ»§±à¼­Íê²éÑ¯Ìõ¼şÖ®ºóÔÙ´«µ½ºóÌ¨£¬¶ÔÊı¾İ½øĞĞ¹ıÂË¡£
+è¿™æ˜¯ä¸€ä¸ªç®€æ˜“æ’ä»¶ï¼Œæ ¹æ®ä¼ å…¥çš„å‚æ•°ï¼ŒåŠ¨æ€ç”Ÿæˆä¸€ä¸ªæŸ¥è¯¢æ¡ä»¶ç¼–è¾‘æ¡†ï¼Œç”¨æˆ·ç¼–è¾‘å®ŒæŸ¥è¯¢æ¡ä»¶ä¹‹åå†ä¼ åˆ°åå°ï¼Œå¯¹æ•°æ®è¿›è¡Œè¿‡æ»¤ã€‚
 
 ![QueryDialog Default View](https://github.com/aphy358/QueryDialog/blob/master/ScreenShot.jpg)
 
 ## Dependencies
 
-ÆÕÍ¨µÄJQuery°ü¼´¿É.  
+æ™®é€šçš„JQueryåŒ…å³å¯.  
 
 - [jQuery v2.1.3 (>= 1.9.0)](http://jquery.com/)
 
 ## Getting Started
 
-[ÏÂÔØ](https://github.com/aphy358/QueryDialog/archive/master.zip)
 
 ### Usage
 
-Ê×ÏÈÊÇÒıÈëÑùÊ½ÎÄ¼şºÍjsÎÄ¼ş.
+é¦–å…ˆæ˜¯å¼•å…¥æ ·å¼æ–‡ä»¶å’Œjsæ–‡ä»¶.
 
 ```html
 <!-- Required Stylesheets -->
@@ -29,17 +28,17 @@
 <script src="QueryDialog.js"></script>
 ```
 
-²å¼ş½«°ó¶¨ÈçÏÂÑùÊ½µÄDOM£¬Èç¹ûÒ³ÃæÔ­±¾Ã»ÓĞ£¬Ôò²å¼ş½«ÔÚÒ³Ãæ×Ô¶¯Éú³ÉÕâ¸öDOM.
+æ’ä»¶å°†ç»‘å®šå¦‚ä¸‹æ ·å¼çš„DOMï¼Œå¦‚æœé¡µé¢åŸæœ¬æ²¡æœ‰ï¼Œåˆ™æ’ä»¶å°†åœ¨é¡µé¢è‡ªåŠ¨ç”Ÿæˆè¿™ä¸ªDOM.
 
 ```html
 <div id="QueryDialog"></div>
 ```
 
-»ù±¾ÓÃ·¨ÈçÏÂ.
+åŸºæœ¬ç”¨æ³•å¦‚ä¸‹.
 
 ```javascript
 $(document).ready(function () {
-    var arrStr = '[{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"ÄêÁä"},{"queryfieldtype":"6","queryfieldname":"name","queryfieldrmk":"ĞÕÃû"},{"queryfieldtype":"5","queryfieldname":"ismarried","queryfieldrmk":"ÊÇ·ñÒÑ»é"},{"queryfieldtype":"4","queryfieldname":"birthday","queryfieldrmk":"³öÉúÈÕÆÚ"}]';
+    var arrStr = '[{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"å¹´é¾„"},{"queryfieldtype":"6","queryfieldname":"name","queryfieldrmk":"å§“å"},{"queryfieldtype":"5","queryfieldname":"ismarried","queryfieldrmk":"æ˜¯å¦å·²å©š"},{"queryfieldtype":"4","queryfieldname":"birthday","queryfieldrmk":"å‡ºç”Ÿæ—¥æœŸ"}]';
     $("#QueryDialog").QueryDialog({ data: arrStr });
 });
 
@@ -51,14 +50,14 @@ function test() {
 
 ## Data Structure
 
-²ÎÊıÊÇÒ»¸ö×Ö·û´®£¬½á¹¹Ê¾Àı£º
+å‚æ•°æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œç»“æ„ç¤ºä¾‹ï¼š
 
 ```javascript
-var arrStr = '[{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"ÄêÁä"},{"queryfieldtype":"6","queryfieldname":"name","queryfieldrmk":"ĞÕÃû"},{"queryfieldtype":"5","queryfieldname":"ismarried","queryfieldrmk":"ÊÇ·ñÒÑ»é"},{"queryfieldtype":"4","queryfieldname":"birthday","queryfieldrmk":"³öÉúÈÕÆÚ"}]';
+var arrStr = '[{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"å¹´é¾„"},{"queryfieldtype":"6","queryfieldname":"name","queryfieldrmk":"å§“å"},{"queryfieldtype":"5","queryfieldname":"ismarried","queryfieldrmk":"æ˜¯å¦å·²å©š"},{"queryfieldtype":"4","queryfieldname":"birthday","queryfieldrmk":"å‡ºç”Ÿæ—¥æœŸ"}]';
 
-//²ÎÊıarrStrÊÇÒ»¸öÊı×éµÄ×Ö·û´®£¬²å¼ş»á½«Ëü×ª³Éjson¸ñÊ½£¬²¢½øÒ»²½´¦Àí£»
-//Ã¿Ò»¸ö²ÎÊıµ¥Ìå½á¹¹£º{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"ÄêÁä"}£»
-//1¡¢queryfieldtype±íÊ¾²éÑ¯Ìõ¼şµÄ²ÎÊıÀàĞÍ£¬Èç¡°ÕûÊı¡±¡¢¡°×Ö·ûĞÍ¡±¡¢¡°ÈÕÆÚĞÍ¡±µÈ£¬ÕâÀï¡°1¡±´ú±íµÄÊÇ¡°¸¡µãĞÍÊı×Ö¡±£¬µ±È»Ò²¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿öÁíÍâÔ¼¶¨£»
-//2¡¢queryfieldname±íÊ¾²éÑ¯Ìõ¼şµÄ×Ö¶ÎÃû³Æ£¬ÊÇÒª¶ÔÄÄ¸ö×Ö¶Î½øĞĞ¹ıÂË£»
-//3¡¢queryfieldrmk±íÊ¾²éÑ¯Ìõ¼ş×Ö¶ÎµÄÏÔÊ¾Ãû³Æ£»
+//å‚æ•°arrStræ˜¯ä¸€ä¸ªæ•°ç»„çš„å­—ç¬¦ä¸²ï¼Œæ’ä»¶ä¼šå°†å®ƒè½¬æˆjsonæ ¼å¼ï¼Œå¹¶è¿›ä¸€æ­¥å¤„ç†ï¼›
+//æ¯ä¸€ä¸ªå‚æ•°å•ä½“ç»“æ„ï¼š{"queryfieldtype":"1","queryfieldname":"age","queryfieldrmk":"å¹´é¾„"}ï¼›
+//1ã€queryfieldtypeè¡¨ç¤ºæŸ¥è¯¢æ¡ä»¶çš„å‚æ•°ç±»å‹ï¼Œå¦‚â€œæ•´æ•°â€ã€â€œå­—ç¬¦å‹â€ã€â€œæ—¥æœŸå‹â€ç­‰ï¼Œè¿™é‡Œâ€œ1â€ä»£è¡¨çš„æ˜¯â€œæµ®ç‚¹å‹æ•°å­—â€ï¼Œå½“ç„¶ä¹Ÿå¯ä»¥æ ¹æ®å®é™…æƒ…å†µå¦å¤–çº¦å®šï¼›
+//2ã€queryfieldnameè¡¨ç¤ºæŸ¥è¯¢æ¡ä»¶çš„å­—æ®µåç§°ï¼Œæ˜¯è¦å¯¹å“ªä¸ªå­—æ®µè¿›è¡Œè¿‡æ»¤ï¼›
+//3ã€queryfieldrmkè¡¨ç¤ºæŸ¥è¯¢æ¡ä»¶å­—æ®µçš„æ˜¾ç¤ºåç§°ï¼›
 ```
