@@ -8,6 +8,7 @@
 ## PreView
 
 UI只是粗略設計，請各位見諒！
+
 ![QueryDialog Default View](https://github.com/aphy358/QueryDialog/blob/master/ScreenShot.jpg)
 
 ## Dependencies
