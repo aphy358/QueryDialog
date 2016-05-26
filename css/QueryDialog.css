@@ -114,7 +114,6 @@ textarea {
 	line-height: 16px;
 }
 
-
 /*浏览器宽度不小于320px时 (IPhone 4、IPhone 5的宽度)*/
 @media screen and (min-width: 320px) {
 	#QueryDialog {
@@ -125,16 +124,15 @@ textarea {
 	}
 }
 
-/*浏览器宽度不小于375px时(IPhone 6 375px的宽度) */
-@media screen and (min-width: 375px) {
+/*浏览器宽度不小于360px时 (荣耀4c的宽度是360px，IPhone 6 375px的宽度，IPhone 6+ 的宽度是414px)*/
+@media screen and (min-width: 360px) {
 	#QueryDialog {
-		width: 365px;
+		width: 350px;
 	}
 	.condition-input:not([type='radio']) {
-		width: 87px;
+		width: 80px;
 	}
 }
-
 
 /*浏览器宽度不小于450px时(适用于大点的屏幕或PC上) */
 @media screen and (min-width: 450px) {
