@@ -7,6 +7,7 @@ body {
 	margin: 0;
 }
 
+/*整体查询条件框*/
 #QueryDialog {
 	position: absolute;
 	top: 10%;
@@ -14,6 +15,7 @@ body {
 	z-index: 2001;
 }
 
+/*遮罩层*/
 .qdialog-mask {
 	position: absolute;
 	top: 0%;
@@ -39,8 +41,7 @@ textarea {
 }
 
 
-/*ÿһ����������ʽ*/
-
+/*一个查询条件项*/
 .query-item {
 	position: relative;
 	display: block;
@@ -54,19 +55,20 @@ textarea {
 	line-height: 24px;
 }
 
+/*第一个查询条件项*/
 .query-item:first-child {
 	border-top: 1px solid #808080;
 	border-radius: 5px 5px 0 0;
 }
 
+/*最后一个查询条件项*/
 .query-item:last-child {
 	border-bottom: 1px solid #808080;
 	border-radius: 0 0 5px 5px;
 }
 
 
-/*ÿһ��������������ʽ����������ȣ�*/
-
+/*查询条件项描述（如‘年龄’、‘姓名’等）*/
 .query-field-rmk {
 	float: left;
 	width: 60px;
@@ -76,24 +78,21 @@ textarea {
 }
 
 
-/*�������������ڡ�С�ڡ���ȣ�*/
-
+/*查询条件描述（如‘大于’、‘小于’等）*/
 .condition-rmk {
 	float: left;
 	margin-right: 2px;
 }
 
 
-/*����ֵ�����*/
-
+/*查询条件输入框，包括input、radio、date等类型*/
 .condition-input {
 	float: left;
 	margin-right: 10px;
 }
 
 
-/*����ֵ�����*/
-
+/*查询条件输入框（剔除radio类型）*/
 .condition-input:not([type='radio']) {
 	display: block;
 	width: 100%;
@@ -147,6 +146,7 @@ textarea {
 	}
 }
 
+/*编辑查询条件时，输入框获得焦点*/
 .condition-input:not([type='radio']):focus {
 	border-color: #66afe9;
 	outline: 0;
@@ -154,6 +154,7 @@ textarea {
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
+/*底部操作按钮（‘取消’、‘查询’）*/
 .query-footer-item {
 	width: 49.8%;
 	height: 100%;
@@ -161,11 +162,13 @@ textarea {
 	text-align: center;
 }
 
+/*操作按钮‘取消’*/
 .query-cancel {
 	color: #e25050;
 	border-right: 1px solid #808080;
 }
 
+/*操作按钮‘查询’*/
 .query-go {
 	color: #1eba20;
 }
